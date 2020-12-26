@@ -1,38 +1,78 @@
-.App {
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header{
+  padding: 30px 0 30px 0;
+  background-image: url('./book.jpg');
+  background: linear-gradient(to bottom right, rgb(43, 1, 1), rgb(87, 39, 39),rgb(161, 108, 108));
+  color: #fff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1{
+  display: inline;
+  margin-left: 15px;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.quote{
+  margin: 40px 40px 0 40px;
+  width: 560px;
+  color: rgb(250, 250, 250);
+  padding: 50px;
+}
+.quote h1{
+  color: rgb(255, 255, 255);
+  /*-webkit-text-stroke: 0.4px black;*/
+  font-size: xx-large;
+  animation: text 3s 1;
+}
+@keyframes text{
+  0%{
+    color :black;
+    margin-left: -30px;
+  }
+  85%{
+    margin-left: -10px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card-container{
+  padding: 30px 30px 10px 30px;
+  background-color: rgb(255, 255, 255,0.8);
+  width:auto;
+  align-content: center;
+  border:3px solid rgba(0,0,0,.225);
+  margin: 10 auto;
+  border-radius: 10px;
+  align-content: center;
+}
+.description{
+ height: auto;
+ padding: 12px;
+ font-family: fantasy;
 }
 
-.App-link {
-  color: #61dafb;
+.list{
+  font-family: fantasy;
+  display:grid;
+  margin:20px 0 50px 0;
+  grid-template-columns:repeat(3,1fr);
+  grid-auto-rows:1fr;
+  grid-gap:1em;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.read-more-link{
+  color: rgb(55, 43, 226);
+  text-decoration: text-decoration;
+  letter-spacing: 1px;
+  font-family: fantasy;
+  font-weight: 300;
+  cursor: pointer;
+}
+.extra-content{
+  color: rgb(0, 2, 5);
+  font-family: Alegreya ;
+  font-weight: 500;
 }
