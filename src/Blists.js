@@ -28,7 +28,7 @@ class Blists extends Component {
           
             <div className="bod">
                 <br/>
-                <Button variant="success" onClick={this.listBooks}>Click here to Get New York Best Selling Book List</Button>
+                <Button variant="success" onClick={this.listBooks}>Click here to Get New York Best Selling Books List</Button>
                 <CardLists books={this.state.books}/>
                 <div className="quote"><h1>“A room without books is like a body without a soul.”<br/>
 ― Marcus Tullius Cicero</h1></div>
